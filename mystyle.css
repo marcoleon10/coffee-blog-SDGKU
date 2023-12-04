@@ -13,19 +13,38 @@ p{
 }
 
 h3,h2{
+    padding: 1rem;
     margin-left: 1rem;
+    text-align: center;
 }
 
 img{
     max-width: 100%;
 }
 
+.imgAboutUs{
+    width:40%;
+    
+    
+}
+
+
+a{
+    text-decoration:  none; /*remove underline from a link*/
+    color: black;
+    padding: 1rem;
+}
+
 
 /*Utilities*/
 .container{
     width: 80%;
+    
+    margin-top: auto;
+    margin-bottom: auto;
     margin-left: auto;
     margin-right: auto;
+    
 }
 
 .read-more-btn{
@@ -47,16 +66,57 @@ img{
 
 }
 
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row; /*i can switch it to column, just if i want them display like column*/
+    /*flex-direction: column-reverse; just make it display as columns, but switch the order upside down*/
+}
+
+.flex-aboutus{
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 2rem;
+    
+
+}
+
+
+
+section{
+    width: 40%;
+}
 
 /*Header*/
 .site-init{
     background-image: url(./img/banner.jpg);
     background-size: cover;
-    height: 300px;
+    height: 400px;
     color: white;
     text-align: center;
+    padding: 1rem;
+
 }
 
-/*Body*/
+.site-init a{
+    color: white;
+}
 
-/*Footer*/
+
+
+/*Footer black background and 120px for the heigth*/
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    height: 100px;
+    color: white;
+    text-align: center;
+    flex-direction: row;
+
+    
+}
+
+footer a{
+    color: white;
+}
