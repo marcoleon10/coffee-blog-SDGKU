@@ -13,26 +13,22 @@ p{
 }
 
 h3,h2{
-    padding: 1rem;
-    margin-left: 1rem;
-    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 img{
     max-width: 100%;
 }
 
-.imgAboutUs{
-    width:40%;
-    
-    
+.img-container{
+    max-width: 100%;
 }
 
 
 a{
     text-decoration:  none; /*remove underline from a link*/
-    color: black;
-    padding: 1rem;
+    padding: 0.5rem;
 }
 
 
@@ -73,15 +69,24 @@ a{
     /*flex-direction: column-reverse; just make it display as columns, but switch the order upside down*/
 }
 
-.flex-aboutus{
-    justify-content: space-between;
-    flex-direction: column;
-    padding: 2rem;
-    
-
+.flex-container-bar{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+     /*the unique difference between .flex-container is that one is order-directioned in rows, and the other one in columns*/
 }
 
+.flex-container-courses{
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+    
+}
 
+.flex-divide{
+    margin-left: 5rem;
+}
 
 section{
     width: 40%;
@@ -91,17 +96,25 @@ section{
 .site-init{
     background-image: url(./img/banner.jpg);
     background-size: cover;
-    height: 400px;
+    height: 350px;
     color: white;
     text-align: center;
     padding: 1rem;
-
 }
 
 .site-init a{
     color: white;
 }
 
+.site-secondary{
+    background-color: black;
+    height: 100px;
+    padding: 1rem;
+}
+
+.site-secondary a, .site-secondary h1{
+    color: white;
+}
 
 
 /*Footer black background and 120px for the heigth*/
@@ -111,12 +124,41 @@ footer{
     background-color: black;
     height: 100px;
     color: white;
-    text-align: center;
-    flex-direction: row;
+    
+    flex-direction: column;
 
     
 }
 
 footer a{
     color: white;
+}
+
+
+/*CONTACT*/
+.form-container{
+    display:flex;
+    flex-direction: column;
+    
+}
+
+form{
+    padding:10px;
+    margin-top: -80px; /*it wont overflow with the image because I let the class container to have auto margin top and bottom*/
+    background-color: white;
+}
+
+.input-container{
+    margin-bottom: 20px;
+}
+
+.input-container input{
+    border:1px solid black;
+    padding:3px;
+    width:75%;
+} 
+
+.input-container label{
+    display: inline-block;
+    width: 80px;
 }
